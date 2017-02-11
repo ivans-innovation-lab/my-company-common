@@ -156,11 +156,18 @@
 	</build>
 	 <distributionManagement>
 	      <repository>
-		<id>artifactory-local</id>
-		<name>artifactory-local</name>
-		<url>http://192.168.0.11:9091/artifactory/mycompany</url>
+		<id>artifactory-local-releases</id>
+		<name>artifactory-local-releases</name>
+		<url>http://192.168.0.11:9091/artifactory/libs-release-local</url>
 	      </repository>
-	 </distributionManagement>
+
+	      <snapshotRepository>
+		  <id>artifactory-local-snapshots</id>
+		  <name>artifactory-local-snapshots</name>
+		  <url>http://192.168.0.11:9091/artifactory/libs-snapshot-local</url>
+	      </snapshotRepository>
+          </distributionManagement>
+
 
 
 
