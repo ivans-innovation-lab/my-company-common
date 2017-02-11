@@ -8,11 +8,6 @@ pipeline {
             steps {
                 sh 'mvn install' 
             }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
-            }
         }
     }
 }
