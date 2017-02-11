@@ -154,6 +154,14 @@
 		</plugins>
 
 	</build>
+	 <distributionManagement>
+	      <repository>
+		<id>artifactory-local</id>
+		<name>artifactory-local</name>
+		<url>http://localhost:9091/artifactory/mycompany</url>
+	      </repository>
+	 </distributionManagement>
+
 
 
 </project>
