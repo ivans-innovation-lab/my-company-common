@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('Build & Deploy artifact') {
             when {
-                branch '*/master'
+                branch 'master'
             }
             steps {
                 sh 'mvn clean deploy'
