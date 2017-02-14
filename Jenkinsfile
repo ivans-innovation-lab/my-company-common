@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh 'mvn clean deploy -DaltDeploymentRepository=artifactory-local-snapshots::default::http://artifactory:8081/artifactory/libs-snapshot-local'
+                sh 'mvn clean deploy -DaltDeploymentRepository=artifactorysnapshots::default::http://artifactory:8081/artifactory/libs-snapshot-local'
             }
         }
     }
