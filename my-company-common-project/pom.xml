@@ -7,18 +7,19 @@
 	<packaging>jar</packaging>
 	<name>my company - common project</name>
 	<description>My Company Common Project project</description>
+	<version>1.0.0</version>
 
 	<parent>
 		<groupId>com.idugalic</groupId>
 		<artifactId>my-company-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.idugalic</groupId>
 			<artifactId>my-company-common</artifactId>
-			<version>${project.parent.version} </version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 

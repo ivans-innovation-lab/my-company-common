@@ -5,7 +5,7 @@
 
 	<groupId>com.idugalic</groupId>
 	<artifactId>my-company-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>my company - parent</name>
@@ -115,23 +115,23 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		    <repository>
+		<repository>
 			<id>artifactoryreleases</id>
 			<name>artifactory-local-releases</name>
 			<url>http://artifactory:8081/artifactory/libs-release-local</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
-		      </repository>
+		</repository>
 
-		      <repository>
-			  <id>artifactorysnapshots</id>
-			  <name>artifactory-local-snapshots</name>
-			  <url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
-			  <snapshots>
+		<repository>
+			<id>artifactorysnapshots</id>
+			<name>artifactory-local-snapshots</name>
+			<url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
+			<snapshots>
 				<enabled>true</enabled>
-			  </snapshots>
-		      </repository>
+			</snapshots>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -171,19 +171,19 @@
 		</plugins>
 
 	</build>
-	 <distributionManagement>
-	      <repository>
-		<id>artifactoryreleases</id>
-		<name>artifactory-local-releases</name>
-		<url>http://artifactory:8081/artifactory/libs-release-local</url>
-	      </repository>
+	<distributionManagement>
+		<repository>
+			<id>artifactoryreleases</id>
+			<name>artifactory-local-releases</name>
+			<url>http://artifactory:8081/artifactory/libs-release-local</url>
+		</repository>
 
-	      <snapshotRepository>
-		  <id>artifactorysnapshots</id>
-		  <name>artifactory-local-snapshots</name>
-		  <url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
-	      </snapshotRepository>
-          </distributionManagement>
+		<snapshotRepository>
+			<id>artifactorysnapshots</id>
+			<name>artifactory-local-snapshots</name>
+			<url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 
 
