@@ -181,10 +181,16 @@
 	
 	<distributionManagement>
 		<repository>
-			<id>bintray-ivans-innovation-lab-my-company</id>
-			<name>ivans-innovation-lab-my-company</name>
-			<url>https://api.bintray.com/maven/ivans-innovation-lab/my-company/my-company-common/;publish=1</url>
+			<id>artifactoryreleases</id>
+			<name>artifactory-local-releases</name>
+			<url>http://artifactory:8081/artifactory/libs-release-local</url>
 		</repository>
+
+		<snapshotRepository>
+			<id>artifactorysnapshots</id>
+			<name>artifactory-local-snapshots</name>
+			<url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 </project>
