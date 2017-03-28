@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>my-company-common-blog</artifactId>
 	<packaging>jar</packaging>
 	<name>my company - common blog</name>
 	<description>My Company Common Blog project</description>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0.6</version>
 	
 	<parent>
 		<groupId>com.idugalic</groupId>
 		<artifactId>my-company-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0.6</version>
 	</parent>
 	
 	<scm>
 		<connection>scm:git:https://github.com/ivans-innovation-lab/my-company-common.git</connection>
 		<developerConnection>scm:git:https://github.com/ivans-innovation-lab/my-company-common.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v1.0.0.6</tag>
 	</scm>
 
 	<dependencies>
