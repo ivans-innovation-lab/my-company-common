@@ -9,6 +9,12 @@ pipeline {
                 branch 'master'
             }
             steps {
+                checkout([
+                $class: 'GitSCM', 
+                extensions: [
+                  [$class: 'LocalBranch'],
+                  [$class: 'UserExclusion', excludedUsers: 'idugalic-namics']
+                 ]])
                 script{
                     sh 'git config --global user.email "ivan.dugalic@namics.com"'
                     sh 'git config --global user.name "idugalic-namics"'
