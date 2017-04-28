@@ -231,12 +231,12 @@
 		<repository>
 			<id>local-releases</id>
 			<name>local-releases</name>
-			<url>git:releases://git@github.com:ivans-innovation-lab/my-company-maven-repository.git</url>
+			<url>https://github.com/ivans-innovation-lab/my-company-maven-repository.git/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>local-snapshots</id>
 			<name>local-snapshots</name>
-			<url>git:snapshots://git@github.com:ivans-innovation-lab/my-company-maven-repository.git</url>
+			<url>https://github.com/ivans-innovation-lab/my-company-maven-repository.git/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
