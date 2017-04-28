@@ -146,24 +146,12 @@
 				<enabled>true</enabled>
 			</releases>
 			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<!-- distributionManagement url was <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url> -->
-			<url>https://raw.github.com/ivans-innovation-lab/my-company-maven-repository.git/releases</url>
-		</repository>
-
-		<repository>
-			<id>local-snapshosts</id>
-			<name>local-snapshosts</name>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 			<!-- distributionManagement url was <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url> -->
-			<url>https://raw.github.com/ivans-innovation-lab/my-company-maven-repository.git/snapshosts</url>
+			<url>https://raw.github.com/ivans-innovation-lab/my-company-maven-repository.git/master</url>
 		</repository>
+
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -231,13 +219,9 @@
 		<repository>
 			<id>local-releases</id>
 			<name>local-releases</name>
-			<url>https://github.com/ivans-innovation-lab/my-company-maven-repository.git/tree/releases</url>
+			<url>https://github.com/ivans-innovation-lab/my-company-maven-repository.git</url>
 		</repository>
-		<snapshotRepository>
-			<id>local-snapshots</id>
-			<name>local-snapshots</name>
-			<url>https://github.com/ivans-innovation-lab/my-company-maven-repository.git/tree/snapshots</url>
-		</snapshotRepository>
+		
 	</distributionManagement>
 
 </project>
