@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.idugalic</groupId>
@@ -138,31 +137,13 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-
 		<repository>
-			<id>local-releases</id>
-			<name>local-releases</name>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<!-- distributionManagement url was <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url> -->
-			<url>https://raw.github.com/ivans-innovation-lab/my-company-maven-repository.git/releases</url>
-		</repository>
-
-		<repository>
-			<id>local-snapshosts</id>
-			<name>local-snapshosts</name>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-			<!-- distributionManagement url was <url>git:your-branch://git@github.com:yourgithubusername/your-github-repo.git</url> -->
-			<url>https://raw.github.com/ivans-innovation-lab/my-company-maven-repository.git/snapshosts</url>
+			<id>bintray-ivans-innovation-lab-my-company</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/ivans-innovation-lab/my-company</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -173,21 +154,10 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
-		<pluginRepository>
-			<id>synergian-repo</id>
-			<url>https://raw.github.com/synergian/wagon-git/releases</url>
-		</pluginRepository>
 	</pluginRepositories>
 
 
 	<build>
-		<extensions>
-			<extension>
-				<groupId>ar.com.synergian</groupId>
-				<artifactId>wagon-git</artifactId>
-				<version>0.2.5</version>
-			</extension>
-		</extensions>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -224,19 +194,16 @@
 	</build>
 
 	<distributionManagement>
-		<!-- <repository> <id>artifactoryreleases</id> <name>artifactory-local-releases</name> 
-			<url>http://artifactory:8081/artifactory/libs-release-local</url> </repository> 
-			<snapshotRepository> <id>artifactorysnapshots</id> <name>artifactory-local-snapshots</name> 
-			<url>http://artifactory:8081/artifactory/libs-snapshot-local</url> </snapshotRepository> -->
 		<repository>
-			<id>local-releases</id>
-			<name>local-releases</name>
-			<url>git:releases://git@github.com:ivans-innovation-lab/my-company-maven-repository.git</url>
+			<id>artifactoryreleases</id>
+			<name>artifactory-local-releases</name>
+			<url>http://artifactory:8081/artifactory/libs-release-local</url>
 		</repository>
+
 		<snapshotRepository>
-			<id>local-snapshots</id>
-			<name>local-snapshots</name>
-			<url>git:snapshots://git@github.com:ivans-innovation-lab/my-company-maven-repository.git</url>
+			<id>artifactorysnapshots</id>
+			<name>artifactory-local-snapshots</name>
+			<url>http://artifactory:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
