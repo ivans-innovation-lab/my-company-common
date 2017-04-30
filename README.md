@@ -16,4 +16,12 @@ This module contains:
 - maven parent pom
 - common classes
 
+## Running instructions / Installation
+
+```bash
+$ cd my-company-blog-domain-microservice
+$ ./mvnw clean install
+```
+
+
 
