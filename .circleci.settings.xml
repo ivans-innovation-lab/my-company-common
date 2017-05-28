@@ -3,14 +3,34 @@
 	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
 	<servers>
 		<server>
-			<id>local-releases</id>
+			<id>idugalic-releases</id>
 			<username>idugalic</username>
-			<password>${env.GITHUB_PASSWORD}</password>
+			<password>${env.MAVEN_PASSWORD}</password>
 		</server>
 		<server>
-			<id>local-snapshosts</id>
+			<id>idugalic-snapshots</id>
 			<username>idugalic</username>
-			<password>${env.GITHUB_PASSWORD}</password>
+			<password>${env.MAVEN_PASSWORD}</password>
 		</server>
 	</servers>
+	<profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<id>default</id>
+			<distributionManagement>
+				<repository>
+					<id>idugalic-releases</id>
+					<name>idugalic-releases</name>
+					<url>http://maven.idugalic.pro/artifactory/local-repository</url>
+				</repository>
+				<snapshotRepository>
+					<id>idugalic-snapshots</id>
+					<name>idugalic-snapshots</name>
+					<url>http://maven.idugalic.pro/artifactory/local-repository</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+	</profiles>
 </settings>
