@@ -13,21 +13,5 @@
 			<password>${env.MAVEN_PASSWORD}</password>
 		</server>
 	</servers>
-	<profiles>
-		<profile>
-			<id>idugalic-cloud</id>
-			<distributionManagement>
-				<repository>
-					<id>idugalic-releases</id>
-					<name>idugalic-releases</name>
-					<url>http://maven.idugalic.pro/artifactory/local-repository</url>
-				</repository>
-				<snapshotRepository>
-					<id>idugalic-snapshots</id>
-					<name>idugalic-snapshots</name>
-					<url>http://maven.idugalic.pro/artifactory/local-repository</url>
-				</snapshotRepository>
-			</distributionManagement>
-		</profile>
-	</profiles>
+	
 </settings>
