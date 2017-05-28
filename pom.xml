@@ -138,12 +138,20 @@
 			</snapshots>
 		</repository>
 		<repository>
+			<id>idugalic-releases</id>
+			<name>idugalic-releases</name>
+			<url>http://maven.idugalic.pro/artifactory/local-repository</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-			<id>bintray-ivans-innovation-lab-my-company</id>
-			<name>bintray</name>
-			<url>http://dl.bintray.com/ivans-innovation-lab/my-company</url>
+		</repository>
+		<repository>
+			<id>idugalic-snapshots</id>
+			<name>idugalic-snapshots</name>
+			<url>http://maven.idugalic.pro/artifactory/local-repository</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 	<pluginRepositories>
