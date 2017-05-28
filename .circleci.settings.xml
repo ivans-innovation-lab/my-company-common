@@ -15,9 +15,6 @@
 	</servers>
 	<profiles>
 		<profile>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
 			<id>idugalic-cloud</id>
 			<distributionManagement>
 				<repository>
