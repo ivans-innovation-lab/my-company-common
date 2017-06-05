@@ -8,7 +8,7 @@ Domain Driven Design is applied through:
 
 ## Events
 
-Commands are messages with intent of doing something. On the other hand, after this something is done, another messages can be produced as a result - Events. They represent a fact.
+Commands are messages with intent of doing something. On the other hand, after this something is done, another messages can be produced as a result - Events. They represent a fact. 
 
 This module contains:
 
