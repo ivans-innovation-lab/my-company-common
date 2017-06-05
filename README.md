@@ -1,5 +1,5 @@
 
-# my-company-common
+# my-company-common [![CircleCI](https://circleci.com/gh/ivans-innovation-lab/my-company-common.svg?style=svg)](https://circleci.com/gh/ivans-innovation-lab/my-company-common)
 
 Domain Driven Design is applied through:
 
