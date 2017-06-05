@@ -19,7 +19,6 @@ This module contains:
 ## Running instructions / Installation
 
 ```bash
-$ cd my-company-blog-domain-microservice
 $ ./mvnw clean install
 ```
 
