@@ -14,14 +14,14 @@ jobs:
       - restore_cache:
           key: my-company-parent-{{ checksum "pom.xml" }}
 
-      - run: mvn -s .circleci/maven.settings.xml dependency:go-offline
+      - run: mvn -s .circleci/maven.settings.xml dependency:go-offline -P idugalic-cloud
 
       - save_cache:
           paths:
             - ~/.m2
           key: my-company-parent-{{ checksum "pom.xml" }}
 
-      - run: mvn -s .circleci/maven.settings.xml package
+      - run: mvn -s .circleci/maven.settings.xml package -P idugalic-cloud
       
       - run: |
           mkdir -p /junit/
