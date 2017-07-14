@@ -28,9 +28,6 @@ jobs:
       - store_test_results:
           path: junit/
           
-      - store_artifacts:
-          path: junit/
-          
       - run: |
           mkdir -p artifacts/
           find . -type f -regex ".*/target/.*jar" -exec cp {} artifacts/ \;
@@ -60,7 +57,7 @@ jobs:
 
 workflows:
   version: 2
-  continuous-delivery-workflow:
+  my-company-parent-workflow:
     jobs:
       - build
       - deploy:
