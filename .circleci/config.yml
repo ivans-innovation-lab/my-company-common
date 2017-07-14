@@ -29,7 +29,7 @@ jobs:
           find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} junit/ \;
           
       - store_test_results:
-          path: /junit
+          path: junit/
           
       - run: |
           mkdir -p artifacts/
