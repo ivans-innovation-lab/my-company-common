@@ -14,7 +14,8 @@ jobs:
       - restore_cache:
           key: my-company-parent-{{ checksum "pom.xml" }}
 
-      - run: mvn -s .circleci/maven.settings.xml dependency:go-offline -P idugalic-cloud
+      #- run: mvn -s .circleci/maven.settings.xml dependency:go-offline -P idugalic-cloud
+      - run: mvn -s .circleci/maven.settings.xml -DskipTests install -P idugalic-cloud
 
       - save_cache:
           paths:
