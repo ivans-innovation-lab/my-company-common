@@ -25,15 +25,15 @@ jobs:
       - run: mvn -s .circleci/maven.settings.xml package -P idugalic-cloud
       
       - run: |
-          mkdir -p /junit/
-          find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} /junit/ \;
+          mkdir -p junit/
+          find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} junit/ \;
           
       - store_test_results:
           path: /junit
           
       - run: |
-          mkdir -p /artifacts/
-          find . -type f -regex ".*/target/.*jar" -exec cp {} /artifacts/ \;
+          mkdir -p artifacts/
+          find . -type f -regex ".*/target/.*jar" -exec cp {} artifacts/ \;
      
       - store_artifacts:
           path: /artifacts  
