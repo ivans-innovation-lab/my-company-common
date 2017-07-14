@@ -36,7 +36,7 @@ jobs:
           find . -type f -regex ".*/target/.*jar" -exec cp {} artifacts/ \;
      
       - store_artifacts:
-          path: /artifacts  
+          path: artifacts/
           
       - persist_to_workspace:
           root: artifacts/
