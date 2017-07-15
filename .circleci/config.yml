@@ -14,7 +14,7 @@ jobs:
       - restore_cache:
           key: my-company-parent-{{ checksum "pom.xml" }}
 
-      - run: mvn -s .circleci/maven.settings.xml install -P idugalic-cloud
+      - run: mvn -s .circleci/maven.settings.xml deploy -P idugalic-cloud
 
       - save_cache:
           paths:
@@ -44,31 +44,9 @@ jobs:
           root: artifacts/
           paths:
             - .
- 
-  deploy:
-    <<: *defaults
-    steps:
-    
-      - checkout
-      
-      - attach_workspace:
-          at: workspace/
-
-      - restore_cache:
-          key: my-company-parent-{{ checksum "pom.xml" }}
-          
-      - run: mvn -s .circleci/maven.settings.xml -DskipTests deploy -P idugalic-cloud
-
 
 workflows:
   version: 2
   my-company-parent-workflow:
     jobs:
       - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
-      
