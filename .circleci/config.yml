@@ -40,10 +40,10 @@ jobs:
       - store_artifacts:
           path: artifacts/
           
-      - persist_to_workspace:
-          root: artifacts/
-          paths:
-            - .
+      #- persist_to_workspace:
+      #    root: artifacts/
+      #    paths:
+      #      - .
 
 workflows:
   version: 2
