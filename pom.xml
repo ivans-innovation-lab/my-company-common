@@ -22,6 +22,7 @@
 		<module>my-company-common</module>
 		<module>my-company-common-blog</module>
 		<module>my-company-common-project</module>
+		<module>my-company-common-team</module>
 	</modules>
 
 	<scm>
