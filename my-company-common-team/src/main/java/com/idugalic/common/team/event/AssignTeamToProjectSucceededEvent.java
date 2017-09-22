@@ -3,17 +3,17 @@ package com.idugalic.common.team.event;
 import com.idugalic.common.event.AuditableAbstractEvent;
 import com.idugalic.common.model.AuditEntry;
 
-public class AssignTeamToProjectSuccessEvent extends AuditableAbstractEvent {
+public class AssignTeamToProjectSucceededEvent extends AuditableAbstractEvent {
 
     private static final long serialVersionUID = 1594380475023480978L;
 
     private String projectId;
    
 
-    public AssignTeamToProjectSuccessEvent() {
+    public AssignTeamToProjectSucceededEvent() {
     }
 
-    public AssignTeamToProjectSuccessEvent(String id, AuditEntry auditEntry, String projectId) {
+    public AssignTeamToProjectSucceededEvent(String id, AuditEntry auditEntry, String projectId) {
         super(id, auditEntry);
         this.projectId = projectId;
     }
