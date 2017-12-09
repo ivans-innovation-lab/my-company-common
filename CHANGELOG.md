@@ -13,14 +13,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [1.1.0]: https://github.com/ivans-innovation-lab/my-company-common/compare/1.0.0...1.1.0
 
-Update Release
-
-### Changed
+### Added
 
 -   New event `BlogPostPublishErrorEvent.java` added
 -   New 'Team' related events
--   Version of 'my-company-common-blog' upgraded to 1.1.0
--   Vesrion of ' my-company-common' upgraded to 1.1.0
+
+### Changed
+
+-   Version of 'my-company-common-blog' upgraded to [1.1.0]
+-   Vesrion of ' my-company-common' upgraded to [1.1.0]
 
 
 ## [1.0.0][] - 2017-10-15
@@ -31,5 +32,5 @@ Initial / First Release
 
 ### Added
 
--   Blog and project related events
--   Abstract and infrastructurall classes
+-   'BlogPost' and 'Project' related events added
+-   Abstract and infrastructurall classes added
