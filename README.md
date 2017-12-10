@@ -17,11 +17,33 @@ This module contains:
 - maven parent pom
 - common classes
 
-## Running instructions / Installation
+## Development
+
+This project is driven using [Maven][mvn].
+
+[mvn]: https://maven.apache.org/
+
+### Run/Install locally
 
 ```bash
 $ ./mvnw clean install
 ```
 
+### Run tests
+
+This component comes with tests. Use the following command to execute the tests using Maven:
+
+```bash
+$ ./mvnw test
+```
+
+---
+Created by [Ivan Dugalic][idugalic]@[lab][lab].
+Need Help?  [Join our Slack team][slack].
+
+[idugalic]: http://idugalic.pro
+[lab]: http://lab.idugalic.pro
+[slack]: https://communityinviter.com/apps/idugalic/idugalic
+[atomist]: https://www.atomist.com/
 
 
