@@ -69,7 +69,7 @@ notify:
  
 workflows:
   version: 2
-  my-company-team-domain-workflow:
+  my-company-parent-workflow:
     jobs:
       - build
       - deploy:
